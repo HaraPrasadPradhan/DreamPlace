@@ -40,7 +40,7 @@ export default function Home() {
         const data = await res.json();
         setSaleListings(data);
       } catch (error) {
-        log(error);
+        console.log(error);
       }
     };
     fetchOfferListings();
@@ -50,13 +50,12 @@ export default function Home() {
       {/* top */}
       <div className='flex flex-col gap-6 p-28 px-3 max-w-6xl mx-auto'>
         <h1 className='text-slate-700 font-bold text-3xl lg:text-6xl'>
-          Find your next <span className='text-sky-400'>perfect</span>
+          Transforming your <span className='text-teal-400'>Dream</span>
           <br />
-          place with ease
+          Spaces to <span className='text-orange-600'>Real</span> Places.
         </h1>
-        <div className='text-gray-600 text-xs sm:text-sm'>
-          Dream Place is the best place to find your next perfect place to
-          live.
+        <div className='text-xs sm:text-sm text-gray-600'>
+          Dream Place is the best place for you to find your living space.
           <br />
           We have a wide range of properties for you to choose from.
         </div>
@@ -64,7 +63,7 @@ export default function Home() {
           to={'/search'}
           className='text-xs sm:text-sm text-blue-800 font-bold hover:underline'
         >
-          Let's get started...
+          Start Dreaming here...
         </Link>
       </div>
 
